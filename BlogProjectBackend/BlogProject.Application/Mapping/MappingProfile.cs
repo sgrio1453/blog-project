@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using BlogProject.Application.DTOs.Blog;
+using BlogProject.Application.DTOs.Category;
 using BlogProject.Application.DTOs.Comment;
 using BlogProject.Application.DTOs.User;
 using BlogProject.Domain.Entities;
@@ -28,6 +29,9 @@ namespace BlogProject.Application.Mapping
             CreateMap<Comment, CommentDto>().ReverseMap();
             CreateMap<CommentCreateDto, Comment>();
             CreateMap<CommentUpdateDto, Comment>();
+
+            CreateMap<Category, CategoryDto>().ReverseMap();
+            CreateMap<CategoryCreateDto, Category>();
         }
     }
 }

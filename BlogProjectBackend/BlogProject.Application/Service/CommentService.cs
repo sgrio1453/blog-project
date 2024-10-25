@@ -59,7 +59,7 @@ namespace BlogProject.Application.Services
                 return ServiceResult.Fail("Yalnızca kendi yorumlarınızı silebilirsiniz.", HttpStatusCode.Forbidden);
             }
 
-            await _commentRepository.DeleteCommentAsync(id);
+            _commentRepository.DeleteComment(id);
             return ServiceResult.Success(HttpStatusCode.NoContent);
         }
 
@@ -105,7 +105,7 @@ namespace BlogProject.Application.Services
             existingComment.Updated = DateTime.Now;
 
 
-            await _commentRepository.UpdateCommentAsync(existingComment);
+            _commentRepository.UpdateComment(existingComment);
             var updatedCommentDto = _mapper.Map<CommentDto>(existingComment);
             return ServiceResult<CommentDto>.Success(updatedCommentDto);
         }

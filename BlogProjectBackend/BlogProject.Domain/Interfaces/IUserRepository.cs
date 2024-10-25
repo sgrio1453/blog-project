@@ -13,7 +13,8 @@ namespace BlogProject.Domain.Interfaces
         Task<User> GetUserByIdAsync(string userId);
         Task<User> GetUserByEmailAsync(string email);
         Task AddUserAsync(User user);
-        Task UpdateUserAsync(User user);
-        Task DeleteUserAsync(string userId);
+        Task<User> GetUserByUserNameAsync(string userName);
+        void UpdateUser(User user);
+        void DeleteUser(string userId);
     }
 }

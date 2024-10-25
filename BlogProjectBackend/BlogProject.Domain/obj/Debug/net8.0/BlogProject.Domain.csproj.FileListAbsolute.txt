@@ -10,3 +10,4 @@ D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Domai
 D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Domain\obj\Debug\net8.0\refint\BlogProject.Domain.dll
 D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Domain\obj\Debug\net8.0\BlogProject.Domain.pdb
 D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Domain\obj\Debug\net8.0\ref\BlogProject.Domain.dll
+D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Domain\obj\Debug\net8.0\BlogProject.Domain.sourcelink.json

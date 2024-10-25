@@ -24,7 +24,7 @@ namespace BlogProject.Infrastructure.Repositories
             await _context.SaveChangesAsync();
         }
 
-        public async Task DeleteBlogAsync(int id)
+        public async void DeleteBlog(int id)
         {
             var blog = await _context.Blogs.FindAsync(id);
             if(blog != null)
@@ -45,7 +45,7 @@ namespace BlogProject.Infrastructure.Repositories
             return await _context.Blogs.Include(c => c.Comments).FirstOrDefaultAsync(b => b.Id == id);
         }
 
-        public async Task UpdateBlogAsync(Blog blog)
+        public async void UpdateBlog(Blog blog)
         {
             _context.Blogs.Update(blog);
             await _context.SaveChangesAsync();

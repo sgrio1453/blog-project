@@ -12,7 +12,7 @@ namespace BlogProject.Domain.Interfaces
         Task<List<Blog>> GetAllBlogsAsync();
         Task<Blog> GetBlogByIdAsync(int id);
         Task AddBlogAsync(Blog blog);
-        Task UpdateBlogAsync(Blog blog);
-        Task DeleteBlogAsync(int id);
+        void UpdateBlog(Blog blog);
+        void DeleteBlog(int id);
     }
 }

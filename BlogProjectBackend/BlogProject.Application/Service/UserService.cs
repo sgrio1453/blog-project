@@ -40,6 +40,18 @@ namespace BlogProject.Application.Services
 
         public async Task<ServiceResult<UserDto>> CreateUserAsync(UserCreateDto userCreateDto, IFormFile profileImage)
         {
+            var existingUserByUserName = await _userRepository.GetUserByUserNameAsync(userCreateDto.UserName);
+            if (existingUserByUserName != null)
+            {
+                return ServiceResult<UserDto>.Fail("Bu kullanıcı adı zaten mevcut.", HttpStatusCode.Conflict);
+            }
+
+            var existingUserByEmail = await _userRepository.GetUserByEmailAsync(userCreateDto.Email);
+            if (existingUserByEmail != null)
+            {
+                return ServiceResult<UserDto>.Fail("Bu e-posta adresi zaten kullanılıyor.", HttpStatusCode.Conflict);
+            }
+
             var user = _mapper.Map<User>(userCreateDto);
             HashingHelper.CreatePasswordHash(userCreateDto.Password, out byte[] passwordHash, out byte[] passwordSalt);
             user.PasswordHash = Convert.ToBase64String(passwordHash);
@@ -50,12 +62,15 @@ namespace BlogProject.Application.Services
                 var fileName = $"{Guid.NewGuid()}{Path.GetExtension(profileImage.FileName)}";
                 var imagePath = await _photoService.SavePhotoAsync(profileImage, "ProfileImages", fileName);
                 user.ProfileImagePath = imagePath;
-            } else
+            }
+            else
             {
                 user.ProfileImagePath = $"{Url.BaseUrl}/Photos/DefaultPhoto/profile.png";
             }
+
             user.CreatedAt = DateTime.Now;
             await _userRepository.AddUserAsync(user);
+
             var createdUserDto = _mapper.Map<UserDto>(user);
             return ServiceResult<UserDto>.SuccessAsCreated(createdUserDto, $"api/blog/{createdUserDto.Id}");
         }
@@ -74,7 +89,7 @@ namespace BlogProject.Application.Services
                 _photoService.DeletePhoto(user.ProfileImagePath);
             }
 
-            await _userRepository.DeleteUserAsync(userId);
+            _userRepository.DeleteUser(userId);
 
             return ServiceResult.Success(HttpStatusCode.NoContent);
         }
@@ -115,10 +130,21 @@ namespace BlogProject.Application.Services
         public async Task<ServiceResult<UserDto>> UpdateUserAsync(string userId, UserUpdateDto userUpdateDto, IFormFile profileImage)
         {
             var user = await _userRepository.GetUserByIdAsync(userId);
-
             if (user == null)
             {
                 return ServiceResult<UserDto>.Fail("Kullanıcı bulunamadı.", HttpStatusCode.NotFound);
+            }
+
+            var existingUserByUserName = await _userRepository.GetUserByUserNameAsync(userUpdateDto.UserName);
+            if (existingUserByUserName != null && existingUserByUserName.Id != userId)
+            {
+                return ServiceResult<UserDto>.Fail("Bu kullanıcı adı zaten mevcut.", HttpStatusCode.Conflict);
+            }
+
+            var existingUserByEmail = await _userRepository.GetUserByEmailAsync(userUpdateDto.Email);
+            if (existingUserByEmail != null && existingUserByEmail.Id != userId)
+            {
+                return ServiceResult<UserDto>.Fail("Bu e-posta adresi zaten kullanılıyor.", HttpStatusCode.Conflict);
             }
 
             user.UserName = userUpdateDto.UserName;
@@ -138,7 +164,8 @@ namespace BlogProject.Application.Services
             }
 
             user.Updated = DateTime.Now;
-            await _userRepository.UpdateUserAsync(user);
+            _userRepository.UpdateUser(user);
+
             var updatedUserDto = _mapper.Map<UserDto>(user);
             return ServiceResult<UserDto>.Success(updatedUserDto);
         }
@@ -167,7 +194,7 @@ namespace BlogProject.Application.Services
 
             user.Updated = DateTime.Now;
 
-            await _userRepository.UpdateUserAsync(user);
+            _userRepository.UpdateUser(user);
 
             return ServiceResult.Success(HttpStatusCode.NoContent);
         }

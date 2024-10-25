@@ -24,7 +24,7 @@ namespace BlogProject.Infrastructure.Repositories
             await _context.SaveChangesAsync();
         }
 
-        public async Task DeleteCommentAsync(int commentId)
+        public async void DeleteComment(int commentId)
         {
             var comment = await _context.Comments.FindAsync(commentId);
             if(comment != null)
@@ -54,7 +54,7 @@ namespace BlogProject.Infrastructure.Repositories
             return await _context.Comments.Where(c => c.UserId == userId).ToListAsync();
         }
 
-        public async Task UpdateCommentAsync(Comment comment)
+        public async void UpdateComment(Comment comment)
         {
             _context.Comments.Update(comment);
             await _context.SaveChangesAsync();

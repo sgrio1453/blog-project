@@ -9,6 +9,7 @@ namespace BlogProject.Infrastructure
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<Comment> Comments { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Category> Categories { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -30,6 +31,16 @@ namespace BlogProject.Infrastructure
                       .WithOne(c => c.User)
                       .HasForeignKey(c => c.UserId)
                       .OnDelete(DeleteBehavior.Restrict);
+            });
+
+            modelBuilder.Entity<Category>(entity =>
+            {
+                entity.HasKey(c => c.Id);
+                entity.Property(c => c.CategoryName).IsRequired();
+                entity.HasMany(c => c.Blogs)
+                    .WithOne(a => a.Category)
+                    .HasForeignKey(a => a.CategoryId)
+                    .OnDelete(DeleteBehavior.Restrict);
             });
 
             modelBuilder.Entity<Blog>(entity =>

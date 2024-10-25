@@ -24,7 +24,7 @@ namespace BlogProject.Infrastructure.Repositories
             await _context.SaveChangesAsync();
         }
 
-        public async Task DeleteUserAsync(string userId)
+        public async void DeleteUser(string userId)
         {
             var user = await _context.Users
                                      .Include(u => u.Blogs)
@@ -52,6 +52,11 @@ namespace BlogProject.Infrastructure.Repositories
             return await _context.Users.ToListAsync();
         }
 
+        public async Task<User> GetUserByUserNameAsync(string userName)
+        {
+            return await _context.Users.FirstOrDefaultAsync(u => u.UserName == userName);
+        }
+
         public async Task<User> GetUserByEmailAsync(string email)
         {
             return await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
@@ -62,7 +67,7 @@ namespace BlogProject.Infrastructure.Repositories
             return await _context.Users.FirstOrDefaultAsync(u => u.Id == userId);
         }
 
-        public async Task UpdateUserAsync(User user)
+        public async void UpdateUser(User user)
         {
             _context.Users.Update(user);
             await _context.SaveChangesAsync();

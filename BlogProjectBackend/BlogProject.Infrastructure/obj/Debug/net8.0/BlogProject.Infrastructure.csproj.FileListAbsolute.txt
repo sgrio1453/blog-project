@@ -17,3 +17,4 @@ D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Infra
 D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Infrastructure\bin\Debug\net8.0\BlogProject.Application.dll
 D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Infrastructure\bin\Debug\net8.0\BlogProject.Application.pdb
 D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Infrastructure\obj\Debug\net8.0\BlogProject.Infrastructure.genruntimeconfig.cache
+D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Infrastructure\obj\Debug\net8.0\BlogProject.Infrastructure.sourcelink.json

@@ -1,5 +1,6 @@
 using BlogProject.Application.Interfaces;
 using BlogProject.Application.Mapping;
+using BlogProject.Application.Service;
 using BlogProject.Application.Services;
 using BlogProject.Application.Settings;
 using BlogProject.Domain.Interfaces;
@@ -63,11 +64,13 @@ builder.Services.AddAuthentication(options =>
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<ICommentRepository, CommentRepository>();
 builder.Services.AddScoped<IBlogRepository, BlogRepository>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 
 // Register services
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<ICommentService, CommentService>();
 builder.Services.AddScoped<IBlogService, BlogService>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<ITokenService, TokenHelper>();
 
 // Register PhotoHelper with string path dependency
@@ -80,6 +83,13 @@ builder.Services.AddScoped<IPhotoService, PhotoHelper>(provider =>
 
 // IHttpContextAccessor registration
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllOrigins",
+        builder => builder.AllowAnyOrigin()
+                          .AllowAnyMethod()
+                          .AllowAnyHeader());
+});
 
 var app = builder.Build();
 
@@ -102,6 +112,8 @@ app.UseStaticFiles(new StaticFileOptions
         Path.Combine(app.Environment.ContentRootPath, "Photos")),
     RequestPath = "/Photos"
 });
+
+app.UseCors("AllowAllOrigins");
 
 app.UseRouting();
 

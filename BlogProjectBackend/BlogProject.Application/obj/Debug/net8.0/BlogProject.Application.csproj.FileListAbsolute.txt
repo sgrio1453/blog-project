@@ -13,3 +13,4 @@ D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Appli
 D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Application\obj\Debug\net8.0\refint\BlogProject.Application.dll
 D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Application\obj\Debug\net8.0\BlogProject.Application.pdb
 D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Application\obj\Debug\net8.0\ref\BlogProject.Application.dll
+D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Application\obj\Debug\net8.0\BlogProject.Application.sourcelink.json

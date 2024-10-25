@@ -73,7 +73,7 @@ namespace BlogProject.Application.Services
                 _photoService.DeletePhoto(blog.ImagePath);
             }
 
-            await _blogRepository.DeleteBlogAsync(id);
+            _blogRepository.DeleteBlog(id);
             return ServiceResult.Success(HttpStatusCode.NoContent);
         }
 
@@ -112,6 +112,7 @@ namespace BlogProject.Application.Services
 
             blog.Title = blogUpdateDto.Title;
             blog.Content = blogUpdateDto.Content;
+            blog.CategoryId = blogUpdateDto.CategoryId;
 
             if (blogImage != null)
             {
@@ -127,7 +128,7 @@ namespace BlogProject.Application.Services
 
             blog.Updated = DateTime.Now;
 
-            await _blogRepository.UpdateBlogAsync(blog);
+            _blogRepository.UpdateBlog(blog);
 
             var updatedBlogDto = _mapper.Map<BlogDto>(blog);
 

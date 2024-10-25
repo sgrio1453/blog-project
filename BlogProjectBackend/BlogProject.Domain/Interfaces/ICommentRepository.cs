@@ -14,7 +14,7 @@ namespace BlogProject.Domain.Interfaces
         Task<List<Comment>> GetCommentsByUserIdAsync(string userId);
         Task<Comment> GetCommentByIdAsync(int commentId);
         Task AddCommentAsync(Comment comment);
-        Task UpdateCommentAsync(Comment comment);
-        Task DeleteCommentAsync(int commentId);
+        void UpdateComment(Comment comment);
+        void DeleteComment(int commentId);
     }
 }
