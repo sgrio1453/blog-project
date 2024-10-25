@@ -1,0 +1,15 @@
+D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Application\bin\Debug\net8.0\BlogProject.Application.deps.json
+D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Application\bin\Debug\net8.0\BlogProject.Application.dll
+D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Application\bin\Debug\net8.0\BlogProject.Application.pdb
+D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Application\bin\Debug\net8.0\BlogProject.Domain.dll
+D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Application\bin\Debug\net8.0\BlogProject.Domain.pdb
+D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Application\obj\Debug\net8.0\BlogProject.Application.csproj.AssemblyReference.cache
+D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Application\obj\Debug\net8.0\BlogProject.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Application\obj\Debug\net8.0\BlogProject.Application.AssemblyInfoInputs.cache
+D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Application\obj\Debug\net8.0\BlogProject.Application.AssemblyInfo.cs
+D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Application\obj\Debug\net8.0\BlogProject.Application.csproj.CoreCompileInputs.cache
+D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Application\obj\Debug\net8.0\BlogProj.0D72DF1B.Up2Date
+D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Application\obj\Debug\net8.0\BlogProject.Application.dll
+D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Application\obj\Debug\net8.0\refint\BlogProject.Application.dll
+D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Application\obj\Debug\net8.0\BlogProject.Application.pdb
+D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Application\obj\Debug\net8.0\ref\BlogProject.Application.dll

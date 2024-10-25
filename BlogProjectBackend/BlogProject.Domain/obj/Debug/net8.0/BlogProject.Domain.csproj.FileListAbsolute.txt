@@ -1,0 +1,12 @@
+D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Domain\bin\Debug\net8.0\BlogProject.Domain.deps.json
+D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Domain\bin\Debug\net8.0\BlogProject.Domain.dll
+D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Domain\bin\Debug\net8.0\BlogProject.Domain.pdb
+D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Domain\obj\Debug\net8.0\BlogProject.Domain.csproj.AssemblyReference.cache
+D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Domain\obj\Debug\net8.0\BlogProject.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Domain\obj\Debug\net8.0\BlogProject.Domain.AssemblyInfoInputs.cache
+D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Domain\obj\Debug\net8.0\BlogProject.Domain.AssemblyInfo.cs
+D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Domain\obj\Debug\net8.0\BlogProject.Domain.csproj.CoreCompileInputs.cache
+D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Domain\obj\Debug\net8.0\BlogProject.Domain.dll
+D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Domain\obj\Debug\net8.0\refint\BlogProject.Domain.dll
+D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Domain\obj\Debug\net8.0\BlogProject.Domain.pdb
+D:\web projeleri\.net projeleri\BlogProject\BlogProjectBackend\BlogProject.Domain\obj\Debug\net8.0\ref\BlogProject.Domain.dll
