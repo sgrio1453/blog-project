@@ -1,7 +1,10 @@
 ﻿using BlogProject.Application.DTOs.Blog;
 using BlogProject.Application.Interfaces;
+using BlogProject.Application.Service;
+using BlogProject.Domain.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 
@@ -46,6 +49,25 @@ namespace BlogProject.Api.Controllers
             return CreateActionResult(result);
         }
 
+        [HttpGet("categoryWithBlogs/{categoryId}")]
+        public async Task<IActionResult> GetAllCategoryWithBlogs(int categoryId)
+        {
+            var result = await _blogService.GetBlogsByCategoryIdAsync(categoryId);
+
+            return CreateActionResult(result);
+        }
+
+    
+        [HttpGet("userWithBlogs/{userId}")]
+        public async Task<IActionResult> GetAllCategoryWithBlogs(string userId)
+        {
+            var result = await _blogService.GetBlogsByUserIdAsync(userId);
+
+            return CreateActionResult(result);
+        }
+
+
+
         [Authorize]
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateBlog( int id, [FromForm] BlogUpdateDto blogUpdateDto, IFormFile? blogImage)
@@ -61,6 +83,15 @@ namespace BlogProject.Api.Controllers
             var result = await _blogService.DeleteBlogAsync(id);
             return CreateActionResult(result);
         }
+
+
+        [HttpGet("search")]
+        public async Task<IActionResult> SearchBlogs([FromQuery] string query)
+        {
+            var result = await _blogService.SearchBlogsAsync(query);
+            return CreateActionResult(result);
+        }
+
 
     }
 }

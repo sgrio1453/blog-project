@@ -3,8 +3,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BlogProject.Infrastructure
 {
-    public class AppDbContext(DbContextOptions options) : DbContext(options)
+    public class AppDbContext : DbContext
     {
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+        {
+        }
 
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<Comment> Comments { get; set; }
@@ -14,6 +17,17 @@ namespace BlogProject.Infrastructure
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Category>(entity =>
+            {
+                entity.HasKey(c => c.Id);
+                entity.Property(c => c.CategoryName).IsRequired().HasMaxLength(50);
+
+                entity.HasMany(c => c.Blogs)
+                      .WithOne(b => b.Category)
+                      .HasForeignKey(b => b.CategoryId)
+                      .OnDelete(DeleteBehavior.Cascade);
+            });
 
             modelBuilder.Entity<User>(entity =>
             {
@@ -25,22 +39,12 @@ namespace BlogProject.Infrastructure
                 entity.HasMany(u => u.Blogs)
                       .WithOne(b => b.User)
                       .HasForeignKey(b => b.UserId)
-                      .OnDelete(DeleteBehavior.Restrict);
+                      .OnDelete(DeleteBehavior.Cascade);
 
                 entity.HasMany(u => u.Comments)
                       .WithOne(c => c.User)
                       .HasForeignKey(c => c.UserId)
-                      .OnDelete(DeleteBehavior.Restrict);
-            });
-
-            modelBuilder.Entity<Category>(entity =>
-            {
-                entity.HasKey(c => c.Id);
-                entity.Property(c => c.CategoryName).IsRequired();
-                entity.HasMany(c => c.Blogs)
-                    .WithOne(a => a.Category)
-                    .HasForeignKey(a => a.CategoryId)
-                    .OnDelete(DeleteBehavior.Restrict);
+                      .OnDelete(DeleteBehavior.NoAction);
             });
 
             modelBuilder.Entity<Blog>(entity =>
@@ -52,24 +56,14 @@ namespace BlogProject.Infrastructure
                 entity.HasMany(b => b.Comments)
                       .WithOne(c => c.Blog)
                       .HasForeignKey(c => c.BlogId)
-                      .OnDelete(DeleteBehavior.Restrict);
+                      .OnDelete(DeleteBehavior.Cascade);
             });
 
             modelBuilder.Entity<Comment>(entity =>
             {
                 entity.HasKey(c => c.Id);
                 entity.Property(c => c.Content).IsRequired().HasMaxLength(500);
-                entity.HasOne(c => c.User)
-                      .WithMany(u => u.Comments)
-                      .HasForeignKey(c => c.UserId)
-                      .OnDelete(DeleteBehavior.Restrict);
-
-                entity.HasOne(c => c.Blog)
-                      .WithMany(b => b.Comments)
-                      .HasForeignKey(c => c.BlogId)
-                      .OnDelete(DeleteBehavior.Restrict);
             });
         }
-
     }
 }

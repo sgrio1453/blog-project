@@ -10,18 +10,8 @@ const Menu = () => {
             </Link>
           </li>
           <li className="font-medium text-lg text-gray-500 hover:bg-black hover:text-white py-2 px-4 rounded-lg duration-500">
-            <Link href="/">
-              <p>Konular</p>
-            </Link>
-          </li>
-          <li className="font-medium text-lg text-gray-500 hover:bg-black hover:text-white py-2 px-4 rounded-lg duration-500">
-            <Link href="/">
-              <p>Yeni Bloglar</p>
-            </Link>
-          </li>
-          <li className="font-medium text-lg text-gray-500 hover:bg-black hover:text-white py-2 px-4 rounded-lg duration-500">
-            <Link href="/">
-              <p>İletişim</p>
+            <Link href="/categories">
+              <p>Kategoriler</p>
             </Link>
           </li>
         </ul>

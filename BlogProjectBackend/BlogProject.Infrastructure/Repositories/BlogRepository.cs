@@ -24,15 +24,20 @@ namespace BlogProject.Infrastructure.Repositories
             await _context.SaveChangesAsync();
         }
 
-        public async void DeleteBlog(int id)
+        public void DeleteBlog(int id)
         {
-            var blog = await _context.Blogs.FindAsync(id);
+            var comments = _context.Comments.Where(c => c.BlogId == id).ToList();
+            _context.Comments.RemoveRange(comments);
+
+
+            var blog =  _context.Blogs.Find(id);
             if(blog != null)
             {
                 _context.Comments.RemoveRange(blog.Comments);
                 _context.Blogs.Remove(blog);
-                await _context.SaveChangesAsync();
             }
+
+            _context.SaveChanges();
         }
 
         public async Task<List<Blog>> GetAllBlogsAsync()
@@ -44,6 +49,35 @@ namespace BlogProject.Infrastructure.Repositories
         {
             return await _context.Blogs.Include(c => c.Comments).FirstOrDefaultAsync(b => b.Id == id);
         }
+
+        public async Task<List<Blog>> GetBlogsByCategoryIdAsync(int categoryId)
+        {
+            return await _context.Blogs
+                .Where(b => b.CategoryId == categoryId)
+                .ToListAsync();
+        }
+
+        public async Task<List<Blog>> GetBlogsByUserIdAsync(string userId)
+        {
+            return await _context.Blogs
+                .Where (b => b.UserId == userId)
+                .ToListAsync();
+        }
+
+        public async Task<List<Blog>> SearchBlogsAsync(string searchTerm)
+        {
+            var blogs = await _context.Blogs
+                .Include(b => b.User)
+                .Include(b => b.Category)
+                .Where(b =>
+                    b.Title.Contains(searchTerm) ||
+                    b.Category.CategoryName.Contains(searchTerm) ||
+                    b.User.DisplayName.Contains(searchTerm))
+                .ToListAsync();
+
+            return blogs;
+        }
+
 
         public async void UpdateBlog(Blog blog)
         {

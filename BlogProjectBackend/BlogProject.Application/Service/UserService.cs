@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using BlogProject.Application.DTOs;
+using BlogProject.Application.DTOs.Blog;
 using BlogProject.Application.DTOs.User;
 using BlogProject.Application.Helpers;
 using BlogProject.Application.Interfaces;
@@ -92,6 +93,12 @@ namespace BlogProject.Application.Services
             _userRepository.DeleteUser(userId);
 
             return ServiceResult.Success(HttpStatusCode.NoContent);
+        }
+        public async Task<ServiceResult<List<UserDto>>> GetAllUsersAsync()
+        {
+            var users = await _userRepository.GetAllUsersAsync();
+            var usersAsDto = _mapper.Map<List<UserDto>>(users);
+            return ServiceResult<List<UserDto>>.Success(usersAsDto);
         }
 
         public async Task<ServiceResult<UserDto>> GetUserByIdAsync(string userId)

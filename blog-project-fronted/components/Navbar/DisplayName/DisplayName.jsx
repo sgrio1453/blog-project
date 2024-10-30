@@ -1,10 +1,9 @@
 import React from 'react'
 
-const DisplayName = ({fontSize}) => {
-  const displayName = "Samet Geçgel";
+const DisplayName = ({fontSize, name}) => {
   return (
     <div className={`font-medium ${fontSize}`}>
-      {displayName}
+      {name}
     </div>
   )
 }

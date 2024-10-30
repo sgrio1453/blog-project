@@ -2,6 +2,7 @@
 using BlogProject.Application.DTOs.Blog;
 using BlogProject.Application.Interfaces;
 using BlogProject.Application.Result;
+using BlogProject.Domain.Constant;
 using BlogProject.Domain.Entities;
 using BlogProject.Domain.Interfaces;
 using Microsoft.AspNet.Identity;
@@ -46,7 +47,7 @@ namespace BlogProject.Application.Services
                 blog.ImagePath = imagePath;
             } else
             {
-                blog.ImagePath = "/Photos/DefaultPhoto/blog.png"; ;
+                blog.ImagePath = $"{Url.BaseUrl}/Photos/DefaultPhoto/blog.png"; ;
             }
             blog.CreatedAt = DateTime.Now;
             await _blogRepository.AddBlogAsync(blog);
@@ -95,6 +96,40 @@ namespace BlogProject.Application.Services
             var blogAsDto = _mapper.Map<BlogDto>(blog);
             return ServiceResult<BlogDto>.Success(blogAsDto);
         }
+
+        public async Task<ServiceResult<List<BlogDto>>> GetBlogsByCategoryIdAsync(int categoryId)
+        {
+            var blogs = await _blogRepository.GetBlogsByCategoryIdAsync(categoryId);
+
+            if (blogs == null)
+            {
+                return ServiceResult<List<BlogDto>>.Fail("Kategoriye ait blog bulunamadı", HttpStatusCode.NotFound);
+            }
+
+            var blogsAsDto = _mapper.Map<List<BlogDto>>(blogs);
+            return ServiceResult<List<BlogDto>>.Success(blogsAsDto);
+        }
+
+        public async Task<ServiceResult<List<BlogDto>>> GetBlogsByUserIdAsync(string userId)
+        {
+            var blogs = await _blogRepository.GetBlogsByUserIdAsync(userId);
+
+            if (blogs == null)
+            {
+                return ServiceResult<List<BlogDto>>.Fail("Kullanıcıya ait blog bulunamadı", HttpStatusCode.NotFound);
+            }
+
+            var blogsAsDto = _mapper.Map<List<BlogDto>>(blogs);
+            return ServiceResult<List<BlogDto>>.Success(blogsAsDto);
+        }
+        public async Task<ServiceResult<List<BlogDto>>> SearchBlogsAsync(string searchTerm)
+        {
+            var blogs = await _blogRepository.SearchBlogsAsync(searchTerm);
+            var blogsAsDto = _mapper.Map<List<BlogDto>>(blogs);
+
+            return ServiceResult<List<BlogDto>>.Success(blogsAsDto);
+        }
+
 
         public async Task<ServiceResult<BlogDto>> UpdateBlogAsync(int blogId, BlogUpdateDto blogUpdateDto, IFormFile blogImage)
         {

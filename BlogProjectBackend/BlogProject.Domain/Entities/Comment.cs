@@ -13,8 +13,8 @@ namespace BlogProject.Domain.Entities
         public DateTime CreatedAt { get; set; }
         public DateTime? Updated { get; set; }
         public int BlogId { get; set; }
-        public Blog Blog { get; set; }
         public string UserId { get; set; }
+        public Blog Blog { get; set; }
         public User User { get; set; }
     }
 }

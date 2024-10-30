@@ -32,6 +32,7 @@ namespace BlogProject.Api.Controllers
             return CreateActionResult(result);
         }
 
+
         [HttpGet("blog/{blogId}")]
         public async Task<IActionResult> GetCommentByBlogId(int blogId)
         {

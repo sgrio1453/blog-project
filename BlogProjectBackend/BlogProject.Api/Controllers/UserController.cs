@@ -33,7 +33,14 @@ namespace BlogProject.Api.Controllers
             return CreateActionResult(result);
         }
 
-        [Authorize]
+        [HttpGet]
+        public async Task<IActionResult> GetAllUser()
+        {
+            var result = await _userService.GetAllUsersAsync();
+            return CreateActionResult(result);
+        }
+
+
         [HttpGet("{id}")]
         public async Task<IActionResult> GetUserById(string id)
         {
@@ -50,7 +57,7 @@ namespace BlogProject.Api.Controllers
         }
 
         [Authorize]
-        [HttpPut("{id}/update-password")]
+        [HttpPost("{id}/update-password")]
         public async Task<IActionResult> UpdateUserPassword(string id, UserPasswordUpdateDto userPasswordUpdateDto)
         {
             var result = await _userService.UpdateUserPasswordAsync(id, userPasswordUpdateDto);

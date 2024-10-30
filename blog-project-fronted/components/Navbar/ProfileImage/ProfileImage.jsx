@@ -1,12 +1,11 @@
 import Image from 'next/image';
 import React from 'react'
 
-const ProfileImage = ({width, height}) => {
-    const profileImage = "/images/Me.jpg";
+const ProfileImage = ({src, width, height}) => {
 
     return (
           <Image
-              src={profileImage}
+              src={src}
               width={width}
               height={height}
               unoptimized

@@ -3,56 +3,48 @@
   "WorkspaceRootPath": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CCC37689-8D9A-4A02-BAA3-C2AD4C52D488}|BlogProject.Application\\BlogProject.Application.csproj|d:\\web projeleri\\.net projeleri\\blogproject\\blogprojectbackend\\blogproject.application\\dtos\\blog\\blogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCC37689-8D9A-4A02-BAA3-C2AD4C52D488}|BlogProject.Application\\BlogProject.Application.csproj|solutionrelative:blogproject.application\\dtos\\blog\\blogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E551F947-A6A8-465F-BBC9-A532A60220B9}|BlogProject.Api\\BlogProject.Api.csproj|d:\\web projeleri\\.net projeleri\\blogproject\\blogprojectbackend\\blogproject.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E551F947-A6A8-465F-BBC9-A532A60220B9}|BlogProject.Api\\BlogProject.Api.csproj|solutionrelative:blogproject.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{30837FB1-1711-4FFE-9B32-4BD648322127}|BlogProject.Domain\\BlogProject.Domain.csproj|d:\\web projeleri\\.net projeleri\\blogproject\\blogprojectbackend\\blogproject.domain\\entities\\blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{30837FB1-1711-4FFE-9B32-4BD648322127}|BlogProject.Domain\\BlogProject.Domain.csproj|solutionrelative:blogproject.domain\\entities\\blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{30837FB1-1711-4FFE-9B32-4BD648322127}|BlogProject.Domain\\BlogProject.Domain.csproj|d:\\web projeleri\\.net projeleri\\blogproject\\blogprojectbackend\\blogproject.domain\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{30837FB1-1711-4FFE-9B32-4BD648322127}|BlogProject.Domain\\BlogProject.Domain.csproj|solutionrelative:blogproject.domain\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CCC37689-8D9A-4A02-BAA3-C2AD4C52D488}|BlogProject.Application\\BlogProject.Application.csproj|d:\\web projeleri\\.net projeleri\\blogproject\\blogprojectbackend\\blogproject.application\\interfaces\\iblogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCC37689-8D9A-4A02-BAA3-C2AD4C52D488}|BlogProject.Application\\BlogProject.Application.csproj|solutionrelative:blogproject.application\\interfaces\\iblogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CCC37689-8D9A-4A02-BAA3-C2AD4C52D488}|BlogProject.Application\\BlogProject.Application.csproj|d:\\web projeleri\\.net projeleri\\blogproject\\blogprojectbackend\\blogproject.application\\service\\blogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CCC37689-8D9A-4A02-BAA3-C2AD4C52D488}|BlogProject.Application\\BlogProject.Application.csproj|solutionrelative:blogproject.application\\service\\blogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CCC37689-8D9A-4A02-BAA3-C2AD4C52D488}|BlogProject.Application\\BlogProject.Application.csproj|d:\\web projeleri\\.net projeleri\\blogproject\\blogprojectbackend\\blogproject.application\\dtos\\blog\\blogcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCC37689-8D9A-4A02-BAA3-C2AD4C52D488}|BlogProject.Application\\BlogProject.Application.csproj|solutionrelative:blogproject.application\\dtos\\blog\\blogcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E551F947-A6A8-465F-BBC9-A532A60220B9}|BlogProject.Api\\BlogProject.Api.csproj|d:\\web projeleri\\.net projeleri\\blogproject\\blogprojectbackend\\blogproject.api\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E551F947-A6A8-465F-BBC9-A532A60220B9}|BlogProject.Api\\BlogProject.Api.csproj|solutionrelative:blogproject.api\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CCC37689-8D9A-4A02-BAA3-C2AD4C52D488}|BlogProject.Application\\BlogProject.Application.csproj|d:\\web projeleri\\.net projeleri\\blogproject\\blogprojectbackend\\blogproject.application\\service\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCC37689-8D9A-4A02-BAA3-C2AD4C52D488}|BlogProject.Application\\BlogProject.Application.csproj|solutionrelative:blogproject.application\\service\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6CB73A0A-C016-4C1A-AAC9-BFB409325B5A}|BlogProject.Infrastructure\\BlogProject.Infrastructure.csproj|d:\\web projeleri\\.net projeleri\\blogproject\\blogprojectbackend\\blogproject.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CB73A0A-C016-4C1A-AAC9-BFB409325B5A}|BlogProject.Infrastructure\\BlogProject.Infrastructure.csproj|solutionrelative:blogproject.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CB73A0A-C016-4C1A-AAC9-BFB409325B5A}|BlogProject.Infrastructure\\BlogProject.Infrastructure.csproj|d:\\web projeleri\\.net projeleri\\blogproject\\blogprojectbackend\\blogproject.infrastructure\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CB73A0A-C016-4C1A-AAC9-BFB409325B5A}|BlogProject.Infrastructure\\BlogProject.Infrastructure.csproj|solutionrelative:blogproject.infrastructure\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{30837FB1-1711-4FFE-9B32-4BD648322127}|BlogProject.Domain\\BlogProject.Domain.csproj|d:\\web projeleri\\.net projeleri\\blogproject\\blogprojectbackend\\blogproject.domain\\interfaces\\iblogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30837FB1-1711-4FFE-9B32-4BD648322127}|BlogProject.Domain\\BlogProject.Domain.csproj|solutionrelative:blogproject.domain\\interfaces\\iblogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CCC37689-8D9A-4A02-BAA3-C2AD4C52D488}|BlogProject.Application\\BlogProject.Application.csproj|d:\\web projeleri\\.net projeleri\\blogproject\\blogprojectbackend\\blogproject.application\\dtos\\blog\\blogupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCC37689-8D9A-4A02-BAA3-C2AD4C52D488}|BlogProject.Application\\BlogProject.Application.csproj|solutionrelative:blogproject.application\\dtos\\blog\\blogupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6CB73A0A-C016-4C1A-AAC9-BFB409325B5A}|BlogProject.Infrastructure\\BlogProject.Infrastructure.csproj|d:\\web projeleri\\.net projeleri\\blogproject\\blogprojectbackend\\blogproject.infrastructure\\repositories\\blogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CB73A0A-C016-4C1A-AAC9-BFB409325B5A}|BlogProject.Infrastructure\\BlogProject.Infrastructure.csproj|solutionrelative:blogproject.infrastructure\\repositories\\blogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CCC37689-8D9A-4A02-BAA3-C2AD4C52D488}|BlogProject.Application\\BlogProject.Application.csproj|d:\\web projeleri\\.net projeleri\\blogproject\\blogprojectbackend\\blogproject.application\\helpers\\hashinghelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCC37689-8D9A-4A02-BAA3-C2AD4C52D488}|BlogProject.Application\\BlogProject.Application.csproj|solutionrelative:blogproject.application\\helpers\\hashinghelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E551F947-A6A8-465F-BBC9-A532A60220B9}|BlogProject.Api\\BlogProject.Api.csproj|d:\\web projeleri\\.net projeleri\\blogproject\\blogprojectbackend\\blogproject.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E551F947-A6A8-465F-BBC9-A532A60220B9}|BlogProject.Api\\BlogProject.Api.csproj|solutionrelative:blogproject.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Infrastructure\\Migrations\\20241025173809_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BlogProject.Infrastructure\\Migrations\\20241025173809_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Infrastructure\\Migrations\\20241030141803_deleteBlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BlogProject.Infrastructure\\Migrations\\20241030141803_deleteBlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6CB73A0A-C016-4C1A-AAC9-BFB409325B5A}|BlogProject.Infrastructure\\BlogProject.Infrastructure.csproj|d:\\web projeleri\\.net projeleri\\blogproject\\blogprojectbackend\\blogproject.infrastructure\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6CB73A0A-C016-4C1A-AAC9-BFB409325B5A}|BlogProject.Infrastructure\\BlogProject.Infrastructure.csproj|solutionrelative:blogproject.infrastructure\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CB73A0A-C016-4C1A-AAC9-BFB409325B5A}|BlogProject.Infrastructure\\BlogProject.Infrastructure.csproj|d:\\web projeleri\\.net projeleri\\blogproject\\blogprojectbackend\\blogproject.infrastructure\\repositories\\blogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CB73A0A-C016-4C1A-AAC9-BFB409325B5A}|BlogProject.Infrastructure\\BlogProject.Infrastructure.csproj|solutionrelative:blogproject.infrastructure\\repositories\\blogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Infrastructure\\Migrations\\20241030135251_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BlogProject.Infrastructure\\Migrations\\20241030135251_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Infrastructure\\Migrations\\20241030134752_updateBlogDelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BlogProject.Infrastructure\\Migrations\\20241030134752_updateBlogDelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,175 +54,149 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Blog.cs",
-              "DocumentMoniker": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Domain\\Entities\\Blog.cs",
-              "RelativeDocumentMoniker": "BlogProject.Domain\\Entities\\Blog.cs",
-              "ToolTip": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Domain\\Entities\\Blog.cs",
-              "RelativeToolTip": "BlogProject.Domain\\Entities\\Blog.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Title": "BlogController.cs",
+              "DocumentMoniker": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Api\\Controllers\\BlogController.cs",
+              "RelativeDocumentMoniker": "BlogProject.Api\\Controllers\\BlogController.cs",
+              "ToolTip": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Api\\Controllers\\BlogController.cs",
+              "RelativeToolTip": "BlogProject.Api\\Controllers\\BlogController.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAqwFoAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T21:58:32.473Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Category.cs",
-              "DocumentMoniker": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Domain\\Entities\\Category.cs",
-              "RelativeDocumentMoniker": "BlogProject.Domain\\Entities\\Category.cs",
-              "ToolTip": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Domain\\Entities\\Category.cs",
-              "RelativeToolTip": "BlogProject.Domain\\Entities\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T21:59:10.154Z",
+              "WhenOpened": "2024-10-30T16:42:21.439Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BlogDto.cs",
-              "DocumentMoniker": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Application\\DTOs\\Blog\\BlogDto.cs",
-              "RelativeDocumentMoniker": "BlogProject.Application\\DTOs\\Blog\\BlogDto.cs",
-              "ToolTip": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Application\\DTOs\\Blog\\BlogDto.cs*",
-              "RelativeToolTip": "BlogProject.Application\\DTOs\\Blog\\BlogDto.cs*",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAArAAAAAAAAAA==",
+              "Title": "IBlogService.cs",
+              "DocumentMoniker": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Application\\Interfaces\\IBlogService.cs",
+              "RelativeDocumentMoniker": "BlogProject.Application\\Interfaces\\IBlogService.cs",
+              "ToolTip": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Application\\Interfaces\\IBlogService.cs",
+              "RelativeToolTip": "BlogProject.Application\\Interfaces\\IBlogService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T21:58:12.469Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CategoryService.cs",
-              "DocumentMoniker": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Application\\Service\\CategoryService.cs",
-              "RelativeDocumentMoniker": "BlogProject.Application\\Service\\CategoryService.cs",
-              "ToolTip": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Application\\Service\\CategoryService.cs",
-              "RelativeToolTip": "BlogProject.Application\\Service\\CategoryService.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T21:53:47.95Z",
+              "WhenOpened": "2024-10-30T16:42:11.657Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Api\\Program.cs",
-              "RelativeDocumentMoniker": "BlogProject.Api\\Program.cs",
-              "ToolTip": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Api\\Program.cs",
-              "RelativeToolTip": "BlogProject.Api\\Program.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAAAHEAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T21:51:48.038Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "BlogService.cs",
               "DocumentMoniker": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Application\\Service\\BlogService.cs",
               "RelativeDocumentMoniker": "BlogProject.Application\\Service\\BlogService.cs",
               "ToolTip": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Application\\Service\\BlogService.cs",
               "RelativeToolTip": "BlogProject.Application\\Service\\BlogService.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAIwE8AAABKAAAAAAAAAA==",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAIwHwAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T21:48:54.246Z",
+              "WhenOpened": "2024-10-30T16:41:43.028Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BlogUpdateDto.cs",
-              "DocumentMoniker": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Application\\DTOs\\Blog\\BlogUpdateDto.cs",
-              "RelativeDocumentMoniker": "BlogProject.Application\\DTOs\\Blog\\BlogUpdateDto.cs",
-              "ToolTip": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Application\\DTOs\\Blog\\BlogUpdateDto.cs",
-              "RelativeToolTip": "BlogProject.Application\\DTOs\\Blog\\BlogUpdateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "BlogProject.Infrastructure\\Repositories\\UserRepository.cs",
+              "ToolTip": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "BlogProject.Infrastructure\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T21:48:48.909Z",
+              "WhenOpened": "2024-10-30T16:41:15.36Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BlogCreateDto.cs",
-              "DocumentMoniker": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Application\\DTOs\\Blog\\BlogCreateDto.cs",
-              "RelativeDocumentMoniker": "BlogProject.Application\\DTOs\\Blog\\BlogCreateDto.cs",
-              "ToolTip": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Application\\DTOs\\Blog\\BlogCreateDto.cs",
-              "RelativeToolTip": "BlogProject.Application\\DTOs\\Blog\\BlogCreateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "IBlogRepository.cs",
+              "DocumentMoniker": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Domain\\Interfaces\\IBlogRepository.cs",
+              "RelativeDocumentMoniker": "BlogProject.Domain\\Interfaces\\IBlogRepository.cs",
+              "ToolTip": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Domain\\Interfaces\\IBlogRepository.cs",
+              "RelativeToolTip": "BlogProject.Domain\\Interfaces\\IBlogRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T21:48:36.11Z",
+              "WhenOpened": "2024-10-30T16:41:06.442Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "HashingHelper.cs",
-              "DocumentMoniker": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Application\\Helpers\\HashingHelper.cs",
-              "RelativeDocumentMoniker": "BlogProject.Application\\Helpers\\HashingHelper.cs",
-              "ToolTip": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Application\\Helpers\\HashingHelper.cs",
-              "RelativeToolTip": "BlogProject.Application\\Helpers\\HashingHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Api\\Program.cs",
+              "RelativeDocumentMoniker": "BlogProject.Api\\Program.cs",
+              "ToolTip": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Api\\Program.cs",
+              "RelativeToolTip": "BlogProject.Api\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T17:43:39.899Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "20241025173809_initial.cs",
-              "DocumentMoniker": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Infrastructure\\Migrations\\20241025173809_initial.cs",
-              "RelativeDocumentMoniker": "BlogProject.Infrastructure\\Migrations\\20241025173809_initial.cs",
-              "ToolTip": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Infrastructure\\Migrations\\20241025173809_initial.cs",
-              "RelativeToolTip": "BlogProject.Infrastructure\\Migrations\\20241025173809_initial.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T17:38:09.391Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Infrastructure\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "BlogProject.Infrastructure\\AppDbContext.cs",
-              "ToolTip": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Infrastructure\\AppDbContext.cs",
-              "RelativeToolTip": "BlogProject.Infrastructure\\AppDbContext.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T17:36:27.442Z",
+              "WhenOpened": "2024-10-30T14:37:55.063Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "CategoryRepository.cs",
-              "DocumentMoniker": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Infrastructure\\Repositories\\CategoryRepository.cs",
-              "RelativeDocumentMoniker": "BlogProject.Infrastructure\\Repositories\\CategoryRepository.cs",
-              "ToolTip": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Infrastructure\\Repositories\\CategoryRepository.cs",
-              "RelativeToolTip": "BlogProject.Infrastructure\\Repositories\\CategoryRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAARAAAAAAAAAA==",
+              "Title": "20241030141803_deleteBlog.cs",
+              "DocumentMoniker": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Infrastructure\\Migrations\\20241030141803_deleteBlog.cs",
+              "RelativeDocumentMoniker": "BlogProject.Infrastructure\\Migrations\\20241030141803_deleteBlog.cs",
+              "ToolTip": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Infrastructure\\Migrations\\20241030141803_deleteBlog.cs",
+              "RelativeToolTip": "BlogProject.Infrastructure\\Migrations\\20241030141803_deleteBlog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T17:35:09.122Z",
+              "WhenOpened": "2024-10-30T14:18:03.354Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 9,
+              "Title": "20241030135251_initial.cs",
+              "DocumentMoniker": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Infrastructure\\Migrations\\20241030135251_initial.cs",
+              "RelativeDocumentMoniker": "BlogProject.Infrastructure\\Migrations\\20241030135251_initial.cs",
+              "ToolTip": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Infrastructure\\Migrations\\20241030135251_initial.cs",
+              "RelativeToolTip": "BlogProject.Infrastructure\\Migrations\\20241030135251_initial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T13:52:51.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20241030134752_updateBlogDelete.cs",
+              "DocumentMoniker": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Infrastructure\\Migrations\\20241030134752_updateBlogDelete.cs",
+              "RelativeDocumentMoniker": "BlogProject.Infrastructure\\Migrations\\20241030134752_updateBlogDelete.cs",
+              "ToolTip": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Infrastructure\\Migrations\\20241030134752_updateBlogDelete.cs",
+              "RelativeToolTip": "BlogProject.Infrastructure\\Migrations\\20241030134752_updateBlogDelete.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T13:47:52.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Infrastructure\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "BlogProject.Infrastructure\\AppDbContext.cs",
+              "ToolTip": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Infrastructure\\AppDbContext.cs",
+              "RelativeToolTip": "BlogProject.Infrastructure\\AppDbContext.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAmwCcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T13:47:27.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "BlogRepository.cs",
               "DocumentMoniker": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Infrastructure\\Repositories\\BlogRepository.cs",
               "RelativeDocumentMoniker": "BlogProject.Infrastructure\\Repositories\\BlogRepository.cs",
               "ToolTip": "D:\\web projeleri\\.net projeleri\\BlogProject\\BlogProjectBackend\\BlogProject.Infrastructure\\Repositories\\BlogRepository.cs",
               "RelativeToolTip": "BlogProject.Infrastructure\\Repositories\\BlogRepository.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwBwAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T17:34:49.028Z",
+              "WhenOpened": "2024-10-30T13:45:44.832Z",
               "EditorCaption": ""
             }
           ]

@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  # api:
+  #   container_name: BlogBackend
+  #   build:
+  #     context: .
+  #     dockerfile: BlogProject.Api/Dockerfile
+  #   ports:
+  #     - "5100:8080"
+  #   depends_on:
+  #     - db
+
+  db:
+    container_name: BlogDb
+    image: mcr.microsoft.com/mssql/server
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Sifre1453.
+    ports:
+      - "1433:1433"

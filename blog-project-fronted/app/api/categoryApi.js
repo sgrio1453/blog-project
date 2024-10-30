@@ -2,11 +2,21 @@ const BASE_URL = "http://localhost:5100/api";
 
 const categoryAPI = {
   getAll: async () => {
-    const response = await fetch(`${BASE_URL}/category`);
+    const response = await fetch(`${BASE_URL}/category`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
     return response.json();
   },
   getById: async (id) => {
-    const response = await fetch(`${BASE_URL}/category/${id}`);
+    const response = await fetch(`${BASE_URL}/category/${id}`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
     return response.json();
   },
   create: async (data) => {

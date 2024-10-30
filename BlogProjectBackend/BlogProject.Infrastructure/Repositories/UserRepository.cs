@@ -23,28 +23,21 @@ namespace BlogProject.Infrastructure.Repositories
             await _context.Users.AddAsync(user);
             await _context.SaveChangesAsync();
         }
-
-        public async void DeleteUser(string userId)
+        public void DeleteUser(string userId)
         {
-            var user = await _context.Users
-                                     .Include(u => u.Blogs)
-                                     .Include(u => u.Comments)
-                                     .FirstOrDefaultAsync(u => u.Id == userId);
+            var comments = _context.Comments.Where(c => c.UserId == userId).ToList();
+            _context.Comments.RemoveRange(comments);
 
+            var blogs = _context.Blogs.Where(b => b.UserId == userId).ToList();
+            _context.Blogs.RemoveRange(blogs);
+
+            var user = _context.Users.FirstOrDefault(u => u.Id == userId);
             if (user != null)
             {
-                _context.Comments.RemoveRange(user.Comments);
-
-                foreach (var blog in user.Blogs)
-                {
-                    var blogComments = await _context.Comments.Where(c => c.BlogId == blog.Id).ToListAsync();
-                    _context.Comments.RemoveRange(blogComments);
-                    _context.Blogs.Remove(blog);
-                }
-
                 _context.Users.Remove(user);
-                await _context.SaveChangesAsync();
             }
+
+            _context.SaveChanges();
         }
 
         public async Task<List<User>> GetAllUsersAsync()

@@ -109,6 +109,54 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "BlogProject.Api.Controllers.BlogController",
+    "Method": "GetAllCategoryWithBlogs",
+    "RelativePath": "api/Blog/categoryWithBlogs/{categoryId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoryId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BlogProject.Api.Controllers.BlogController",
+    "Method": "SearchBlogs",
+    "RelativePath": "api/Blog/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BlogProject.Api.Controllers.BlogController",
+    "Method": "GetAllCategoryWithBlogs",
+    "RelativePath": "api/Blog/userWithBlogs/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "BlogProject.Api.Controllers.CategoryController",
     "Method": "GetAllCategories",
     "RelativePath": "api/Category",
@@ -274,6 +322,16 @@
   },
   {
     "ContainingType": "BlogProject.Api.Controllers.UserController",
+    "Method": "GetAllUser",
+    "RelativePath": "api/User",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BlogProject.Api.Controllers.UserController",
     "Method": "GetUserById",
     "RelativePath": "api/User/{id}",
     "HttpMethod": "GET",
@@ -349,7 +407,7 @@
     "ContainingType": "BlogProject.Api.Controllers.UserController",
     "Method": "UpdateUserPassword",
     "RelativePath": "api/User/{id}/update-password",
-    "HttpMethod": "PUT",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
